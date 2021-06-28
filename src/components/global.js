@@ -1,0 +1,2 @@
+global.qr = "";
+global.menu = [];

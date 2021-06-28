@@ -1,0 +1,2 @@
+localStorage.getItem("datamenu")
+localStorage.setItem("myData", global.qr);

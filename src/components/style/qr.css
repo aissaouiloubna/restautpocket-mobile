@@ -1,0 +1,92 @@
+.forqr {
+  margin-top: 5%;
+}
+.forqr section {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.forqr .container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 30px 10px;
+  box-shadow: 7px 7px 60px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+}
+
+.forqr h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  color: #607d8b;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.forqr p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.575);
+}
+.hair {
+  border: 1px solid #c05812cc;
+}
+.forqr .logoa {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.forqr .logoa img {
+  width: 50%;
+}
+
+.forqr .form-control-button {
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: transparent;
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: #c05812cc;
+  border: none;
+}
+
+.forqr .form-control-button span {
+  color: #fff;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.messagediv {
+  padding: 8%;
+
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  display: flex;
+}
+.message {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  color: red;
+}

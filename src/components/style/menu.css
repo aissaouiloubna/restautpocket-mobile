@@ -1,0 +1,246 @@
+.containera {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.row__posters {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  height: fit-content;
+}
+
+.containt {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  display: flex;
+  object-fit: contain;
+}
+
+.containt::-webkit-scrollbar {
+  display: none;
+}
+
+.plat {
+  box-shadow: 7px 7px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 350px;
+  height: 500px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.plat:hover {
+  transform: scale(1.05);
+}
+.image {
+  float: inline-end;
+  max-width: 100%;
+  height: auto;
+}
+.ajouter {
+  justify-self: inherit;
+  width: 80%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 300;
+  border: 1px solid #607d8b;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: transparent;
+  border-radius: 30px;
+  background-color: #c05812cc;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+  color: black;
+}
+.titre {
+  color: #c05812cc;
+  font-size: 17px;
+  padding: 5px;
+}
+.titreprix span {
+  color: #c05812cc;
+  font-size: 20px;
+  padding: 5px;
+}
+.titreprix {
+  color: black;
+  font-weight: 500px;
+  font-size: 15px;
+  width: 300px;
+  padding: 5px;
+}
+.description {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px;
+}
+.categories {
+  text-transform: uppercase;
+  text-align: left;
+  color: #607d8b;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #c05812cc;
+  display: inline-block;
+  width: fit-content;
+}
+.hair {
+  border: 2px solid #c05812cc;
+}
+.menuA {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.logo {
+  position: relative;
+}
+.log_panier {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  top: 0px;
+  text-align: right;
+  color: black;
+  font-weight: 600;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.panierContent {
+  width: 40vw;
+  min-width: 300px;
+  padding: 4px;
+  /* background: rgb(240, 239, 239); */
+  box-shadow: 2px 2px 5px rgb(46, 46, 46);
+  border-radius: 10px;
+  background: rgb(240, 239, 239) !important;
+  opacity: 0.9;
+  z-index: 2;
+  position: fixed;
+  right: 10px;
+  top: 63px;
+  text-align: center;
+}
+.panierContent > .content > .items > .item {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.panierContent > .content > .items > .item > .qte {
+  width: 10%;
+}
+.panierContent > .content > .items > .item > .title {
+  width: 50%;
+}
+.panierContent > .content > .items > .item > .prix {
+  width: 10%;
+}
+.panierContent > .content > .items > .item > .icon {
+  cursor: pointer;
+  transform-origin: all;
+  transition: 1s;
+  width: 10%;
+}
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+
+.panierContent > .content > .items > .item > .icon:hover {
+  transform: scale(1.4);
+}
+
+.EmptyList {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.EmptyList > i {
+  font-size: 50px;
+}
+.EmptyList > p {
+}
+.checkout {
+  background: rgb(55, 180, 55);
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 18px;
+  width: 30%;
+
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checkout:hover {
+  background-color: white;
+  color: rgb(55, 180, 55);
+}
+
+.Total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+}
+.Total > .title {
+}
+.Total > .prix {
+}
+
+.Modal {
+  height: 300px;
+  width: 350px;
+  background-color: #ffffff;
+
+  overflow: auto;
+  border-radius: 20px;
+}
+
+.Overlay {
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
